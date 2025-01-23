@@ -1,0 +1,26 @@
+header {
+  @include centerChild();
+  text-align: center;
+  min-height: 100vh;
+
+  h1, i {
+    color: $color1;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 10px;
+    min-width: 34%;
+    font-weight: 800;
+  }
+
+  h1, p {
+    margin-bottom: 40px;
+  }
+
+  i {
+    border: solid 2.5px $color1;
+    border-radius: 100%;
+    padding: 30px;
+  }
+}

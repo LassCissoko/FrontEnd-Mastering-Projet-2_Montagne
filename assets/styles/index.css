@@ -9,6 +9,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  background: url(/assets/images/bg.jpg) center/cover fixed;
 }
 
 h4, h5, p {
@@ -21,4 +22,35 @@ h1, h2, h3, li, button, label, span {
 
 h4, p {
   color: #fbf5f5;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+header h1, header i {
+  color: #fbf5f5;
+}
+header h1 {
+  font-size: 4rem;
+  letter-spacing: 10px;
+  min-width: 34%;
+  font-weight: 800;
+}
+header h1, header p {
+  margin-bottom: 40px;
+}
+header i {
+  border: solid 2.5px #fbf5f5;
+  border-radius: 100%;
+  padding: 30px;
 }/*# sourceMappingURL=index.css.map */

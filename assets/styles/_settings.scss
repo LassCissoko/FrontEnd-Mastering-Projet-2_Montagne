@@ -13,12 +13,15 @@ $color2: #0f0900;
 $color3: #e9e9e9;
 
 // Variables
-// @mixin CenterItems() {
-
-// }
+@mixin centerChild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 body {
   font-family:"Inter", sans-serif;
+  background: url(/assets/images/bg.jpg)center/cover fixed;
 }
 
 h4,h5, p {

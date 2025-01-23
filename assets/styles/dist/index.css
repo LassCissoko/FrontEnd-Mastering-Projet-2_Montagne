@@ -8,6 +8,8 @@
 
 body {
   font-family: "Inter", sans-serif;
+  background: url(/assets/images/bg.jpg) center/cover;
+  min-height: 100vh;
 }
 
 h4, h5, p {
@@ -20,4 +22,10 @@ h1, h2, h3, li, button, label, span {
 
 h4, p {
   color: #fbf5f5;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
