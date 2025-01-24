@@ -9,7 +9,7 @@
 
 // Initialisation variables couleurs
 $color1: #fbf5f5;
-$color2: #0f0900;
+$color2: #100f0f;
 $color3: #e9e9e9;
 
 // Variables
@@ -35,4 +35,36 @@ h1,h2,h3,li,button,label,span {
 
 footer {
   color: $color3;
+}
+
+ .btn {
+  font-family: "Inter",sans-serif;
+  font-weight: 600;
+  border: solid 2.3px $color2;
+  background-color: transparent;
+  padding: 10px 25px ;
+  cursor: pointer;
+  margin: 50px;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    color: $color1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: $color2;
+    transition: height 0.2s ease;
+    z-index: -1;
+  }
+  
+  &:hover::before {
+    height: 100%;
+  }
 }

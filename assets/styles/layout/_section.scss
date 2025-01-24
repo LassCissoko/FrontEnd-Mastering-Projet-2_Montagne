@@ -3,7 +3,52 @@
   width: 78%;
   margin: 0 auto;
 
-  .introduction-text p {
-   color: $color2;
+  .introduction-container {
+    @include centerChild();
+    flex-direction: column;
+    text-align: center;
+
+    .introduction-text p {
+      margin: 70px 0 50px;
+    }
+
+    .introduction-text p:first-child::before {
+      position: absolute;
+      content: "";
+      transform: translate(-112%, 10px);
+      width: 28%;
+      height: 2px;
+      background-color: #e3e3e3;
+    }
+
+    .introduction-text p:first-child::after {
+      position: absolute;
+      content: "";
+      transform: translate(12%, 10px);
+      width: 27%;
+      height: 2px;
+      background-color: #e3e3e3;
+    }
+    
+    .introduction-text h2 {
+      font-size: 3rem;
+      letter-spacing: 5px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .introduction-text p:last-child {
+      line-height: 45px;
+      padding: 8px 9px;
+      max-width: 670px;
+    }
+  }
+
+  .introduction-img img {
+    width: 80%;
+  }
+
+  .btn {
+    margin-bottom: 150px;
   }
 }
