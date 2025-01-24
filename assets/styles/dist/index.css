@@ -8,8 +8,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: url(/assets/images/bg.jpg) center/cover;
-  min-height: 100vh;
+  background: url(/assets/images/bg.jpg) center/cover fixed;
 }
 
 h4, h5, p {
@@ -28,4 +27,23 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+header h1, header i {
+  color: #fbf5f5;
+}
+header h1 {
+  font-size: 4rem;
+  letter-spacing: 10px;
+  min-width: 34%;
+  font-weight: 800;
+}
+header h1, header p {
+  margin-bottom: 40px;
+}
+header i {
+  border: solid 2.5px #fbf5f5;
+  border-radius: 100%;
+  padding: 30px;
 }

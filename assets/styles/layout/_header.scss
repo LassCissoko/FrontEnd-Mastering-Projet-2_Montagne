@@ -2,7 +2,7 @@ header {
   @include centerChild();
   text-align: center;
   min-height: 100vh;
-
+  
   h1, i {
     color: $color1;
   }
@@ -22,5 +22,6 @@ header {
     border: solid 2.5px $color1;
     border-radius: 100%;
     padding: 30px;
+    cursor: pointer;
   }
 }
