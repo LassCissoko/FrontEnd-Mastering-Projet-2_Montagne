@@ -10,7 +10,6 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    border: solid 1px $color1;
     color: $color1;
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.307);
@@ -23,6 +22,7 @@ nav {
   .navigation {
     display: flex;
     font-size: 0.8rem;
+    letter-spacing: 3px;
   }
 
   .navigation li:first-child {
@@ -34,7 +34,6 @@ nav {
     background-color: $color1;
     color: $color2;
     transition: 0.2s;
-    cursor: pointer;
   }
 
   .socials {
@@ -46,5 +45,10 @@ nav {
     padding-left: 20px;
     padding-right: 20px;
     align-content: center;
+  }
+
+  .navigation li,
+  .socials li:hover {
+    cursor: pointer;
   }
 }
