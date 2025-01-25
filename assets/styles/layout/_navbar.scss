@@ -51,4 +51,35 @@ nav {
   .socials li:hover {
     cursor: pointer;
   }
+
+  .socials li {
+    transition: ease-in-out 0.2s;
+    transform: scale(1);
+
+   &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+  
+// MEDIA-QUERIES
+  @media screen and (max-width: 500px) {
+    .navigation {
+      width: 100%;
+    }
+    li {
+      font-size: 0.6rem;
+      width: 100%;
+    }
+
+  }
+
+  @media screen and (max-width: 868px) {
+    .navigation li {
+      text-align: center;
+    }
+    .socials {
+      display: none;
+    }
+  }
 }

@@ -24,4 +24,20 @@ header {
     padding: 30px;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 666px) {
+   h1 {
+      font-size: 2rem;
+    }
+  }
+
+
+  @media screen and (max-width: 390px) {
+   h1 {
+      font-size: 1rem;
+    }
+      p {
+       font-size: 0.8rem;
+      }
+  }
 }

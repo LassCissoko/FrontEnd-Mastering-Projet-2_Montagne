@@ -40,6 +40,8 @@ footer {
     color: $color4;
     width: 150px;
     cursor: pointer;
+    transition: ease-in-out 0.2s;
+    transform: scale(1);
     
     &:hover {
       color: $color1;
@@ -73,6 +75,8 @@ footer {
       margin: 5px;
       color: $color2;
       cursor: pointer;
+      transition: ease-in-out 0.2s;
+      transform: scale(1);
 
       &:hover {
         color: $color1;
@@ -80,4 +84,10 @@ footer {
       }
     }
   }
+
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 100%;
+  }
  }
+}
