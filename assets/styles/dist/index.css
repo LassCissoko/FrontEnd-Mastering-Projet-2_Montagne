@@ -11,16 +11,46 @@ body {
   background: url(/assets/images/bg.jpg) center/cover fixed;
 }
 
-h4, h5, p {
+p {
   font-family: "Merriweather", sans-serif;
+  font-style: italic;
 }
 
 h1, h2, h3, li, button, label, span {
   text-transform: uppercase;
 }
 
-h4, p {
+footer {
+  color: #e9e9e9;
+}
+
+.btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  border: solid 2.3px #100f0f;
+  background-color: transparent;
+  padding: 10px 25px;
+  cursor: pointer;
+  margin: 50px;
+  position: relative;
+  z-index: 1;
+}
+.btn:hover {
   color: #fbf5f5;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #100f0f;
+  transition: height 0.2s ease;
+  z-index: -1;
+}
+.btn:hover::before {
+  height: 100%;
 }
 
 header {
@@ -30,7 +60,7 @@ header {
   text-align: center;
   min-height: 100vh;
 }
-header h1, header i {
+header h1, header p, header i {
   color: #fbf5f5;
 }
 header h1 {
@@ -61,7 +91,6 @@ nav .nav-container {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  border: solid 1px #fbf5f5;
   color: #fbf5f5;
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.307);
@@ -72,16 +101,16 @@ nav .nav-container ul, nav li {
 nav .navigation {
   display: flex;
   font-size: 0.8rem;
+  letter-spacing: 3px;
 }
 nav .navigation li:first-child {
   background-color: #fbf5f5;
-  color: #0f0900;
+  color: #100f0f;
 }
 nav .navigation li:hover {
   background-color: #fbf5f5;
-  color: #0f0900;
+  color: #f3f3f3;
   transition: 0.2s;
-  cursor: pointer;
 }
 nav .socials {
   font-size: 1.5rem;
@@ -91,4 +120,57 @@ nav .socials li {
   padding-left: 20px;
   padding-right: 20px;
   align-content: center;
+}
+nav .navigation li,
+nav .socials li:hover {
+  cursor: pointer;
+}
+
+.introduction {
+  background-color: #fbf5f5;
+  width: 78%;
+  margin: 0 auto;
+}
+.introduction .introduction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.introduction .introduction-container .introduction-text p {
+  margin: 70px 0 50px;
+}
+.introduction .introduction-container .introduction-text p:first-child::before {
+  position: absolute;
+  content: "";
+  transform: translate(-112%, 10px);
+  width: 28%;
+  height: 2px;
+  background-color: #e3e3e3;
+}
+.introduction .introduction-container .introduction-text p:first-child::after {
+  position: absolute;
+  content: "";
+  transform: translate(12%, 10px);
+  width: 27%;
+  height: 2px;
+  background-color: #e3e3e3;
+}
+.introduction .introduction-container .introduction-text h2 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.introduction .introduction-container .introduction-text p:last-child {
+  line-height: 45px;
+  padding: 8px 9px;
+  max-width: 670px;
+}
+.introduction .introduction-img img {
+  width: 80%;
+}
+.introduction .btn {
+  margin-bottom: 150px;
 }

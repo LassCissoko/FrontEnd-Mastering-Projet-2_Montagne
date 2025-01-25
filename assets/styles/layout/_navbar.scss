@@ -26,13 +26,13 @@ nav {
   }
 
   .navigation li:first-child {
-    background-color: $color1;
+    background-color: rgb(243, 243, 243);
     color: $color2;
   }
 
   .navigation li:hover {
-    background-color: $color1;
-    color: rgb(243, 243, 243);
+    background-color: rgb(243, 243, 243);
+    color: $color2;
     transition: 0.2s;
   }
 

@@ -119,12 +119,12 @@ nav .navigation {
   letter-spacing: 3px;
 }
 nav .navigation li:first-child {
-  background-color: #fbf5f5;
+  background-color: rgb(243, 243, 243);
   color: #100f0f;
 }
 nav .navigation li:hover {
-  background-color: #fbf5f5;
-  color: rgb(243, 243, 243);
+  background-color: rgb(243, 243, 243);
+  color: #100f0f;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -201,4 +201,36 @@ nav .socials li:hover {
 }
 .introduction .btn {
   margin-bottom: 150px;
+}
+
+.article {
+  background-color: #fbf5f5;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 78%;
+  border-top: solid 2px #e3e3e3;
+}
+.article .article, .article p {
+  margin: 70px 0 50px;
+}
+.article .article, .article h3 {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.article .article-img img {
+  width: 80%;
+  margin: 50px 0 10px;
+}
+.article .article-text {
+  padding: 0 34px 0 57px;
+  line-height: 40px;
+  text-align: left;
+}
+.article .article, .article .btn {
+  margin-top: 0;
 }/*# sourceMappingURL=index.css.map */
