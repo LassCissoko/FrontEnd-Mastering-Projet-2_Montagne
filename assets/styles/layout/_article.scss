@@ -4,7 +4,14 @@
   display: flex;
   margin: 0 auto;
   width: 78%;
-  border-top: solid 2px #e3e3e3;
+
+  .article-left-content,.article-right-content {
+    border-top: solid 2px #e3e3e3;
+  }
+  
+  .article-left-content {
+    border-right: solid 2px #e3e3e3;
+  }
 
   .article, p {
     margin: 70px 0 50px;

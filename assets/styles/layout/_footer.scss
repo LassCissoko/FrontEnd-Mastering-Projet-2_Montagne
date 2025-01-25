@@ -1,0 +1,86 @@
+footer {
+  background-color: $color3;
+  color: $color4;
+  width: 78%;
+  margin: 30px auto;
+  
+  footer, label, input[type="submit"], span {
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 50px;
+  }
+  
+  .footer-left form {
+  display: flex;
+  flex-direction: column;
+
+  .footer-left, label, input, textarea {
+    margin: 10px;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .footer-left, input, textarea {
+    border: solid 1px #d3d3d3;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 90%;
+    resize: none;
+  }
+  input[type="submit"] {
+    margin-top: 20px;
+    border: solid 2px $color4;
+    border-radius: 0;
+    color: $color4;
+    width: 30%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+    &:hover {
+      color: $color1;
+      background-color: $color4;
+      transition: 0.2s ease;
+    }
+   }
+}
+
+  .footer-right {
+    display: grid;
+    color: $color4;
+    
+    .foot-right, p {
+      font-size: 0.8rem;
+      font-weight: 100;
+    }
+    
+    .footer-right-content {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      padding: 30px;
+      align-items: center;
+    }
+
+    .footer-socials li {
+      font-size: 1rem;
+      padding: 10px;
+      border: solid 1px $color4;
+      border-radius: 30px;
+      margin: 5px;
+      color: $color2;
+      cursor: pointer;
+
+      &:hover {
+        color: $color1;
+        background-color: $color2;
+      }
+    }
+  }
+ }
