@@ -283,11 +283,8 @@ footer .footer-left form input[type=submit] {
   border: solid 2px #68676b;
   border-radius: 0;
   color: #68676b;
-  width: 30%;
+  width: 150px;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
 }
 footer .footer-left form input[type=submit]:hover {
   color: #fbf5f5;

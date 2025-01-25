@@ -38,11 +38,8 @@ footer {
     border: solid 2px $color4;
     border-radius: 0;
     color: $color4;
-    width: 30%;
+    width: 150px;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
     
     &:hover {
       color: $color1;
