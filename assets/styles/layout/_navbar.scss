@@ -13,28 +13,41 @@ nav {
     color: $color1;
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.307);
-  }
 
-  .nav-container ul, li {
-    height: 100%;
+    ul, li {
+      height: 100%;
+    }
   }
 
   .navigation {
     display: flex;
     font-size: 0.8rem;
     letter-spacing: 3px;
-  }
 
+    @media screen and (max-width: 700px) {
+      li {
+        font-size: 0.5rem;
+      }
+    }
+  }
+  
   .navigation li:first-child {
     background-color: rgb(243, 243, 243);
     color: $color2;
+  }
+
+  .navigation:hover li:not(:hover) {
+    background: none;
+    color: $color1;
   }
 
   .navigation li:hover {
     background-color: rgb(243, 243, 243);
     color: $color2;
     transition: 0.2s;
+
   }
+
 
   .socials {
     font-size: 1.5rem;
@@ -55,6 +68,7 @@ nav {
   .socials li {
     transition: ease-in-out 0.2s;
     transform: scale(1);
+    margin-right: 10px;
 
    &:hover {
       transform: scale(1.5);

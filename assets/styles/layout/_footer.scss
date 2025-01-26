@@ -13,12 +13,22 @@ footer {
   .footer-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 50px;
+    margin: 50px 0;
+
+    @media screen and (max-width: 912px) {
+      grid-template-columns: 100%;
+     }
   }
   
   .footer-left form {
   display: flex;
   flex-direction: column;
+  margin: 20px;
+
+  label {
+    text-align: left;
+  }
+  
 
   .footer-left, label, input, textarea {
     margin: 10px;
@@ -42,6 +52,8 @@ footer {
     cursor: pointer;
     transition: ease-in-out 0.2s;
     transform: scale(1);
+    text-align: center;
+    margin: 0 auto;
     
     &:hover {
       color: $color1;
@@ -54,6 +66,8 @@ footer {
   .footer-right {
     display: grid;
     color: $color4;
+    border-left: solid 2px #d3d3d3;
+
     
     .foot-right, p {
       font-size: 0.8rem;
@@ -65,6 +79,11 @@ footer {
       grid-template-columns: 30% 70%;
       padding: 30px;
       align-items: center;
+      border-bottom: solid 2px #d3d3d3;
+
+      &:first-child {
+        border-top: solid 2px #d3d3d3;
+      }
     }
 
     .footer-socials li {
@@ -84,10 +103,4 @@ footer {
       }
     }
   }
-
-@media screen and (max-width: 1024px) {
-  .footer-container {
-    grid-template-columns: 100%;
-  }
- }
 }

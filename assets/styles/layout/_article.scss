@@ -5,6 +5,10 @@
   margin: 0 auto;
   width: 78%;
 
+  @media screen and (max-width: 700px) {
+     flex-direction: column;
+  }
+
   .article-left-content,.article-right-content {
     border-top: solid 2px #e3e3e3;
   }
@@ -37,11 +41,5 @@
 
   .article, .btn {
     margin-top: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .article {
-    flex-direction: column;
   }
 }

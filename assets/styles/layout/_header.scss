@@ -3,6 +3,19 @@ header {
   text-align: center;
   min-height: 100vh;
   
+  .header-content {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: headerAnim 1.5s forwards;
+  }
+
+  @keyframes headerAnim {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
   h1, p, i {
     color: $color1;
   }
@@ -12,10 +25,18 @@ header {
     letter-spacing: 10px;
     min-width: 34%;
     font-weight: 800;
+
+    @media screen and (max-width: 700px) {
+      font-size: 2rem;
+    }
   }
 
   h1, p {
     margin-bottom: 40px;
+  }
+
+  p {
+    margin: 40px auto 60px;
   }
 
   i {
@@ -23,21 +44,5 @@ header {
     border-radius: 100%;
     padding: 30px;
     cursor: pointer;
-  }
-
-  @media screen and (max-width: 666px) {
-   h1 {
-      font-size: 2rem;
-    }
-  }
-
-
-  @media screen and (max-width: 390px) {
-   h1 {
-      font-size: 1rem;
-    }
-      p {
-       font-size: 0.8rem;
-      }
   }
 }
